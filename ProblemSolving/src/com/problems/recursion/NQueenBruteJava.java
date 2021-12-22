@@ -64,4 +64,9 @@ class NQueenBruteJava {
         }
         return res;
     }
+    
+    public static void main(String[] args) {
+    	NQueenBruteJava d = new NQueenBruteJava();
+		System.out.println(d.solveNQueens(4));
+	}
 }
