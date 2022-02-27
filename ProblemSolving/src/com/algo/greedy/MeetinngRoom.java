@@ -1,11 +1,16 @@
 package com.algo.greedy;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class MeetinngRoom {
+	
+	public static void main(String[] args) {
+		int [][] input = {{0, 5}, {1, 2}, {1, 10}} ;
+		
+		System.out.println(solve(input));
+	}
 
-    public int solve(int[][] intervals) {
+    public static int solve(int[][] intervals) {
 
     Arrays.sort(intervals, Comparator.comparing((int[] itv) -> itv[0]));
  
@@ -28,4 +33,6 @@ public class MeetinngRoom {
  
     return count;
     }
+    
+    
 }

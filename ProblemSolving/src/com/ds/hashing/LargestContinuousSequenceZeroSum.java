@@ -3,8 +3,13 @@ package com.ds.hashing;
 import java.util.*;
 
 public class LargestContinuousSequenceZeroSum {
+	
+	 public static void main(String[] args) {
+		 int [] innput = {3,1,3,4,5}; 
+		 System.out.println(lszero(innput));
+	}
 
-    public int[] lszero(int[] A) {
+    public static int[] lszero(int[] A) {
         
         ArrayList<Pair> out = Pair.findSubArrays(A, A.length);
         int [] res = null;
@@ -72,10 +77,10 @@ class Pair
                             out.add(new Pair(al.get(it) + 1, i));
                     }
                 }
-                al.add(i);2
-                map.put(sum, al);(1,(0)),(3,(1)),(5,(3)),
+                al.add(i);//2
+                map.put(sum, al);//1,(0)),(3,(1)),(5,(3)),
             }
-            return out;(1,2),(3,4)
+            return out;//(1,2),(3,4)
     }
-    {1 ,2 ,-2 ,4 ,-4}
+    //{1 ,2 ,-2 ,4 ,-4}
 }
