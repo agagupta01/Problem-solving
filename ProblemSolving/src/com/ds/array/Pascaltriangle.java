@@ -3,14 +3,14 @@ package com.ds.array;
 import java.util.*;
 
 class Pascaltriangle {
-    public static List<ArrayList<Integer>> generate(int numRows) {
+    public static List<List<Integer>> generate(int numRows) {
         
-    	List<ArrayList<Integer>> ans = new List<ArrayList<Integer>>();
+    	List<List<Integer>> ans = new ArrayList<List<Integer>>();
     	List<Integer> row = null,prev = null;
         
         for(int i = 0; i < numRows;i++){
             row = new ArrayList<Integer>();
-            for(int j = i ; j <= i ;j++){
+            for(int j = 0 ; j <= i ;j++){
                 if(j == i || j == 0){
                     row.add(1);
                 } else {
@@ -25,7 +25,7 @@ class Pascaltriangle {
     }
     
     public static void main(String[] args) {
-    	List<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>(); 
+    	List<List<Integer>> ans = new ArrayList<List<Integer>>(); 
     	ans = generate(5);
     	
     	for(List<Integer> its : ans) {
