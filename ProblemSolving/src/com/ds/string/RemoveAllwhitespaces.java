@@ -4,7 +4,7 @@ public class RemoveAllwhitespaces {
 
 	
 	public static void main(String[] args) {
-		String s = " i am abbhishek";
+		String s = " i am abhishek";
 		
 		StringBuffer st = new StringBuffer();
 		String sts = "";
@@ -16,7 +16,13 @@ public class RemoveAllwhitespaces {
 		}
 		
 		
-		System.out.println(sts);
+		
+		
+		String sp = "a";
+		
+		
+		
+		System.out.println(sp);
 		//System.out.println(st.toString());
 	}
 }
